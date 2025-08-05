@@ -13,6 +13,7 @@ using namespace std;
 #define vll vector<ll>
 #define pll pair<ll, ll>
 #define vpll vector<pair<ll, ll>>
+#define vvpll vector<vpll>
 #define endl '\n'
 #define found(x, y) (x.find(y) != x.end()) //set - map - unordered_set - unordered_map
 #define sz(x) (int)x.size()
@@ -39,9 +40,6 @@ int main() {
   return 0;
 
 }
-
-
-
 
 
 
