@@ -29,12 +29,15 @@ using namespace std;
 
 const int inf = 0x3f3f3f3f;
 const ll linf = 0x3f3f3f3f3f3f3f3fll;
+const double PI = acos(-1);
 ll meuJeitoNinja = 0; 
 
-template<typename Container, typename T>
-bool fd(const T& value, const Container& container) {
-  return find(container.begin(), container.end(), value) != container.end();
-} 
+//#pragma GCC target("popcnt")
+
+//bits 
+ll msb(ll x) { return (x == 0 ? 0 : 64 - __builtin_clzll(x)); }
+ll lsb(ll x) { return __builtin_ffsll(x); }
+
 
 signed main() {
   ios_base::sync_with_stdio(0);
@@ -42,8 +45,9 @@ signed main() {
   
 
   return 0;
+} 
 
-}
+
 
 
 
