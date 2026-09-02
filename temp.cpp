@@ -29,6 +29,7 @@ template<class T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag,tr
 #define endl '\n'
 #define found(x, y) (x.find(y) != x.end()) //set - map - unordered_set - unordered_map
 #define sz(x) (ll)x.size()
+#define teto(a, b) (((a)+(b)-1)/(b)) 
 
 //loops
 #define rep(i, a, b) for(ll i = (a); i < (b); i++)
@@ -50,9 +51,12 @@ ll lsb(ll x) { return __builtin_ffsll(x); }
 template<class A, class B> auto& operator>>(istream& is, pair<A, B>&p){return is >> p.ff >> p.ss;}
 template<class A, class B> auto& operator<<(ostream& os, const pair<A, B>&p){return os << p.ff << ' ' << p.ss;}
 template<class T> auto& operator>>(istream& i, vector<T>& v){for(auto& x : v)i >> x; return i;}
-template<class T> auto& operator<<(ostream& os, vector<T>& v){rep(i, 0, sz(v)) os << v[i] << ' '; return os;} 
+template<class T> auto& operator<<(ostream& os, vector<T>& v){rep(i, 0, sz(v)) os << v[i] << ' '; return os;}
+template<class T> auto& operator<<(ostream& os, const set<T>& s){for(const auto& x: s) os << x << ' '; return os;}
+template<class T> auto& operator<<(ostream& os, const deque<T>& d){for(const auto& x: d) os << x << ' '; return os;}
 
 void solve(){
+
 
 }
 
